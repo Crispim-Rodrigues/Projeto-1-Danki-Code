@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header inicio */
+header{
+    height: 80px;
+    background-color: #212343;
+}
+.center{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+header > .center > img{
+    position: relative;
+    top: 25px;
+}
+/* Header final */
