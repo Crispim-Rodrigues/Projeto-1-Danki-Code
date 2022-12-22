@@ -4,6 +4,14 @@ function Home() {
     return(
         <section className="home">
             <div className="center">
+                <div className="container_list">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet consectetur ipsum dolor sit</li>
+                        <li>Lorem ipsum dolor sit amet consectetur ipsum dolor sit</li>
+                        <li>Lorem ipsum dolor sit amet consectetur ipsum dolor sit</li>
+                        <li>Lorem ipsum dolor sit amet consectetur ipsum dolor sit</li>
+                    </ul>
+                </div>
                 <div className="form">
                     <div className="container_form">
                         <h3>
@@ -19,7 +27,6 @@ function Home() {
                             <input type="text" id="telefone" name="telefone"/>
                             <p>* Campos Obrigatórios</p>
                             <input type="submit" value="ENVIAR" />
-
                         </form>
                     </div>
                 </div>
