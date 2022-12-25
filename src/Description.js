@@ -1,5 +1,5 @@
 import "./App.css";
-
+import arrow from "./images/arrow.png"
 function Description(){
     return(
         <section className="description_main">
@@ -11,6 +11,7 @@ function Description(){
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel urna lacus. Sed nunc lacus, luctus vitae pellentesque quis, suscipit eu metus. Morbi mattis nunc a magna efficitur efficitur.
                     </span>
                 </div>
+            <img src={arrow} alt=""/>
             </div>
         </section>
     )
