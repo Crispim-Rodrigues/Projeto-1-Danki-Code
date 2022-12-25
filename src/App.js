@@ -3,6 +3,8 @@ import Header from './Header.js';
 import Home from './Home.js';
 import Description from './Description.js';
 import Learn from './Learn.js';
+import Footer from './Footer.js';
+
 function App() {
   return (
     <div className="App">
@@ -10,6 +12,7 @@ function App() {
       <Home/>
       <Description/>
       <Learn/>
+      <Footer/>
     </div>
   );
 }
