@@ -54,8 +54,6 @@ header > .center > img{
     
 }
 .container_form form{
-    width: 100%;
-    height: 100%;
     margin: 10px 0;
 }
 .container_form form input,
@@ -67,15 +65,13 @@ header > .center > img{
     height: 45px;
 }
 .container_form form input[type="submit"]{
-    position: relative;
     font-size: 20px;
     border: none;
     color: white;
+    margin: 0 25px;
     margin-top: 40px;
     background-color: #363a6d;
     width: calc(100% - 50px);
-    left: 50%;
-    transform: translatex(-50%);
     cursor: pointer;
 }
 .container_form form p{
@@ -142,6 +138,7 @@ header > .center > img{
 }
 .learn_main .learn_boxes{
     display: flex;
+    flex-wrap: wrap;
     padding: 30px 0;
 }
 .learn_main .learn_boxes .box_single{
@@ -171,3 +168,44 @@ footer .center .footer_text h2{
     font-size: medium;
 }
 /* fim footer */
+
+@media screen and (max-width: 990px){
+    .home{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+   
+    .home .center  .form{ 
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 20px 0;
+        float: left;
+    }
+    .container_form form input{
+        position: static;
+        transform: translate(none);
+        left: 0;
+    }
+    .home .center  .form{
+
+    }
+    .container_list{
+        margin: 20px 0;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 700px;
+    }
+}
+@media screen and (max-width: 700px){
+    .learn_main .learn_boxes .box_single{
+        width: 100%;
+        margin: 40px auto;
+    }
+    .box_text{
+        max-width: 400px;
+        margin: auto auto;
+    }
+}
